@@ -1133,14 +1133,13 @@ p {
 }
 @media (min-width: 1200px) {
   .footer__two {
+    margin: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 .footer__logo {
@@ -1316,6 +1315,7 @@ p {
 }
 @media (min-width: 1200px) {
   .subscribe-email {
+    width: 570px;
     margin: 0;
   }
 }

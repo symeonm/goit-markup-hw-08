@@ -1,0 +1,120 @@
+/* Команда */
+
+.section--background {
+    background-color: rgba(245, 244, 250, 1);
+}
+
+.team {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    &__list {
+        @media screen and (min-width: $mobile) {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+    
+        @media screen and (min-width: $tablet) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+
+        }
+
+        @media screen and (min-width: $desktop) {
+            display: flex;
+            flex-wrap: nowrap;
+            column-gap: 30px;
+        }
+    
+    }
+
+    &__item {
+
+        gap: 30px;
+        
+        @media (min-width: $mobile) {
+
+            width: 100%;   
+        }
+
+        @media screen and (min-width: $tablet) {
+             flex-basis: calc((100% - 30px) / 2);
+        }
+
+        @media screen and (min-width: $desktop) {
+            flex-basis: calc((100% - 90px) / 4);
+            height: 428px;
+        }
+
+        background: #ffffff;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+            0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
+    }
+
+
+    &__info {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    &__name {
+        text-align: center;
+        margin-bottom: 10px;
+
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 16px;
+
+        color: #757575;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.18;
+        letter-spacing: 0.03em;
+    }
+
+    &__social {
+        display: flex;
+      justify-content: center;
+    }
+
+    &__social-networks:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__social-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #afb1b8;
+
+        border-radius: 50%;
+        width: 44px;
+        height: 44px;
+
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+            &:focus {
+                background-color: $brand-color;
+                fill: #ffffff;
+            }
+    }
+
+    
+}
+

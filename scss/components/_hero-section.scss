@@ -1,0 +1,164 @@
+/*hero*/
+
+.hero {
+    max-width: 100%;
+   
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(/images/heroyMobile.jpg);
+
+
+    &__section {
+        height: 100%;
+            padding-top: 118px;
+            padding-bottom: 118px;
+            text-align: center;
+
+            @media (min-width: $tablet) {
+                padding-top: 200px;
+                padding-bottom: 200px;
+            }
+        }
+    
+    &__title {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    
+    &__title--text {
+        
+                width: 360px;
+                margin-left: auto;
+                margin-right: auto;
+                color: #ffffff;
+                font-weight: 900;
+                font-size: 26px;
+                line-height: 1.61;
+                letter-spacing: 0.06em;
+                margin: 0;
+            
+
+        
+        @media (min-width: $desktop) {
+            width: 696px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #ffffff;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 1.36;
+            letter-spacing: 0.06em;
+            margin: 0;
+        }
+        }
+    
+    &__button {
+
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+        
+        
+            width: 216px;
+            height: 50px;
+        
+        
+            border: 0px;
+            cursor: pointer;
+            background: $brand-color;
+            font-family: "Roboto";
+            font-style: normal;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.87;
+            letter-spacing: 0.06em;
+        
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+
+        @media (min-width:$desktop) {
+            width: 216px;
+            height: 50px;
+        }
+    }
+
+    
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 2dppx),
+(min-resolution: 192dpi) {
+    .hero {
+        max-width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            background-size: cover;
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(/images/heroyMobile@2x.jpg);
+    }
+}
+
+@media (min-width: 481px) {
+    .hero {
+        max-width: 100%;
+        background-size: cover;
+        background-image:
+        linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+                url(/images/heroyTablet.jpg);
+    }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .hero {
+                max-width: 100%;
+                margin-left: auto;
+                margin-right: auto;
+                background-size: cover;
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(/images/heroyTablet@2x.jpg);
+            }
+        }
+}
+
+@media (min-width: $tablet) {
+    .hero {
+        width: 1600px;
+        height: 600px;
+        background-image:
+            linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(/images/heroyDesktop.jpg);
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        .hero {
+            width: 1600px;
+            height: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(/images/heroyDesktop@2x.jpg);
+        }
+    }
+}
+

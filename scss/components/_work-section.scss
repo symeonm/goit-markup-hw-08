@@ -1,0 +1,28 @@
+/* Приклади робіт */
+
+.section--work {
+    padding-top: 0;
+
+    @media screen and (min-width: $mobile) and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.work {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+
+    &__list {
+            display: flex;
+            list-style-type: none;
+        }
+    
+        &__item:not(:last-child) {
+            margin-right: 30px;
+        }
+}
+

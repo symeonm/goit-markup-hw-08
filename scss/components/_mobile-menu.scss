@@ -1,0 +1,109 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    transform: translateX(100%);
+    transition: transform 500ms;
+
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+
+    &.is-open {
+            transform: translateX(0);
+        }
+        
+    &__close {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        border: none;
+        background-color: #FFFFFF;
+        padding: 0;
+        
+        &:hover {
+            transition: transform 500ms;
+            fill: $brand-color;
+            background-color: #FFFFFF;
+        }
+
+    }
+
+}
+
+.nav-mobile {
+    
+    margin-bottom: 306px;
+
+    &__item {
+        &:not(:last-child) {
+                margin-bottom: 32px;
+            }
+    }
+
+    &__link {
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        text-decoration: none;
+        
+            color: #212121;
+
+        &--color {
+            color: $brand-color;
+        }
+    }
+}
+
+.contact-mobile {
+
+    margin-bottom: 64px;
+
+    &__item {
+        margin-bottom: 32px;
+    }
+
+    &__tel {
+        font-size: 34px;
+            line-height: 1.17;
+            letter-spacing: 0.02em;
+        text-decoration: none;
+        color: $brand-color;
+    }
+
+    &__mail {
+        font-size: 24px;
+            line-height: 1.16;
+            letter-spacing: 0.02em;
+        text-decoration: none;
+        color: #757575;
+        fill: #757575;
+    }
+}
+
+.social-mobile {
+    display: flex;
+
+    &__item {
+
+
+            &:not(:last-child) {
+                padding-right: 10px;
+                margin-right: 10px;
+                border-right: 1px solid rgba(33, 33, 33, 0.2);
+            }
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+            font-size: 18px;
+            line-height: 1.22;
+            letter-spacing: 0.02em;
+            color: $brand-color;
+    }
+}
+

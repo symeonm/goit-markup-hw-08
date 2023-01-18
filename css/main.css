@@ -342,6 +342,11 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -487,12 +492,19 @@ p {
           align-items: center;
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.15;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   text-decoration: none;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 1200px) {
+  .contact__link {
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+  }
 }
 .contact__link:hover, .contact__link:focus {
   color: #2196f3;
@@ -549,8 +561,6 @@ p {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/heroyMobile.jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroyMobile.jpg);
 }
 .hero__section {
   height: 100%;
@@ -558,7 +568,7 @@ p {
   padding-bottom: 118px;
   text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .hero__section {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -632,7 +642,13 @@ p {
   }
 }
 
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+@media (max-width: 480px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/heroyMobile.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroyMobile.jpg);
+  }
+}
+@media (max-width: 480px) and (min-device-pixel-ratio: 2), (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) and (min-resolution: 2dppx), (max-width: 480px) and (min-resolution: 192dpi) {
   .hero {
     max-width: 100%;
     margin-left: auto;
@@ -660,7 +676,7 @@ p {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroyTablet@2x.jpg);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .hero {
     width: 1600px;
     height: 600px;
@@ -668,7 +684,7 @@ p {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/heroyDesktop.jpg);
   }
 }
-@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx), (min-width: 768px) and (min-resolution: 192dpi) {
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx), (min-width: 1200px) and (min-resolution: 192dpi) {
   .hero {
     width: 1600px;
     height: 600px;
@@ -800,7 +816,7 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-@media (min-width: 769px) {
+@media (max-width: 767px) {
   .benefits__title {
     text-align: center;
   }
@@ -817,7 +833,7 @@ p {
 .section--work {
   padding-top: 0;
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 1199px) {
   .section--work {
     display: none;
   }
@@ -854,6 +870,11 @@ p {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+}
+@media (max-width: 1199px) {
+  .team {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 320px) {
   .team__list {
@@ -974,6 +995,11 @@ p {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+}
+@media (max-width: 1199px) {
+  .client {
+    margin-bottom: 30px;
+  }
 }
 @media (min-width: 320px) {
   .client__list {
@@ -1598,14 +1624,25 @@ p {
   fill: #2196f3;
   background-color: #FFFFFF;
 }
-
-.nav-mobile {
-  margin-bottom: 306px;
+.mobile-menu__info {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .nav-mobile__item:not(:last-child) {
   margin-bottom: 32px;
 }
 .nav-mobile__link {
+  font-weight: 500;
   font-size: 40px;
   line-height: 47px;
   letter-spacing: 0.02em;
@@ -1616,13 +1653,11 @@ p {
   color: #2196f3;
 }
 
-.contact-mobile {
-  margin-bottom: 64px;
-}
 .contact-mobile__item {
   margin-bottom: 32px;
 }
 .contact-mobile__tel {
+  font-weight: 500;
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -1630,6 +1665,7 @@ p {
   color: #2196f3;
 }
 .contact-mobile__mail {
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
@@ -1642,6 +1678,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 64px;
 }
 .social-mobile__item:not(:last-child) {
   padding-right: 10px;

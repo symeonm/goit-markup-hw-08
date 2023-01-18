@@ -5,11 +5,6 @@
    
     margin-left: auto;
     margin-right: auto;
-    
-    background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-                url(../images/heroyMobile.jpg);
 
 
     &__section {
@@ -18,7 +13,7 @@
             padding-bottom: 118px;
             text-align: center;
 
-            @media (min-width: $tablet) {
+            @media (min-width: $desktop) {
                 padding-top: 200px;
                 padding-bottom: 200px;
             }
@@ -93,30 +88,12 @@
     
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 2dppx),
-(min-resolution: 192dpi) {
+@media (max-width: 480px) {
     .hero {
-        max-width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-            background-size: cover;
-        background-image: linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-                url(../images/heroyMobile@2x.jpg);
-    }
-}
-
-@media (min-width: 481px) {
-    .hero {
-        max-width: 100%;
-        background-size: cover;
-        background-image:
-        linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-                url(../images/heroyTablet.jpg);
+          background-image: linear-gradient(to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+          url(../images/heroyMobile.jpg);
     }
 
         @media (min-device-pixel-ratio: 2),
@@ -130,35 +107,65 @@
                 background-image: linear-gradient(to right,
                         rgba(47, 48, 58, 0.4),
                         rgba(47, 48, 58, 0.4)),
-                    url(../images/heroyTablet@2x.jpg);
+                    url(../images/heroyMobile@2x.jpg);
             }
         }
-}
-
-@media (min-width: $tablet) {
-    .hero {
-        width: 1600px;
-        height: 600px;
-        background-image:
-            linear-gradient(to right,
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)),
-            url(../images/heroyDesktop.jpg);
     }
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
+
+
+
+    @media (min-width: 481px) {
+        .hero {
+            max-width: 100%;
+            background-size: cover;
+            background-image:
+            linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                    url(../images/heroyTablet.jpg);
+        }
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 2dppx),
+            (min-resolution: 192dpi) {
+                .hero {
+                    max-width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    background-size: cover;
+                    background-image: linear-gradient(to right,
+                            rgba(47, 48, 58, 0.4),
+                            rgba(47, 48, 58, 0.4)),
+                        url(../images/heroyTablet@2x.jpg);
+                }
+            }
+    }
+
+    @media (min-width: $desktop) {
         .hero {
             width: 1600px;
             height: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            background-image: linear-gradient(to right,
+            background-image:
+                linear-gradient(to right,
                     rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../images/heroyDesktop@2x.jpg);
+                url(../images/heroyDesktop.jpg);
         }
-    }
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx),
+        (min-resolution: 192dpi) {
+            .hero {
+                width: 1600px;
+                height: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url(../images/heroyDesktop@2x.jpg);
+            }
+        }
 }
 

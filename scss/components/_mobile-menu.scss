@@ -32,11 +32,16 @@
 
     }
 
+    &__info {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
 }
 
 .nav-mobile {
-    
-    margin-bottom: 306px;
 
     &__item {
         &:not(:last-child) {
@@ -45,6 +50,7 @@
     }
 
     &__link {
+        font-weight: 500;
         font-size: 40px;
         line-height: 47px;
         letter-spacing: 0.02em;
@@ -60,13 +66,12 @@
 
 .contact-mobile {
 
-    margin-bottom: 64px;
-
     &__item {
         margin-bottom: 32px;
     }
 
     &__tel {
+        font-weight: 500;
         font-size: 34px;
             line-height: 1.17;
             letter-spacing: 0.02em;
@@ -75,6 +80,7 @@
     }
 
     &__mail {
+        font-weight: 500;
         font-size: 24px;
             line-height: 1.16;
             letter-spacing: 0.02em;
@@ -86,6 +92,7 @@
 
 .social-mobile {
     display: flex;
+    margin-top: 64px;
 
     &__item {
 

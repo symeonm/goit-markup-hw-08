@@ -103,7 +103,7 @@
             line-height: 1.14;
             letter-spacing: 0.03em;
 
-            @media (min-width: 769px) {
+            @media (max-width: 767px) {
                 text-align: center;
             }
         }

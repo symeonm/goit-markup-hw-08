@@ -3,7 +3,7 @@
 .section--work {
     padding-top: 0;
 
-    @media screen and (min-width: $mobile) and (max-width: 767px) {
+    @media (max-width: 1199px) {
         display: none;
     }
 }

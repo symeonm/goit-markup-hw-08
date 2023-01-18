@@ -9,6 +9,10 @@
     line-height: 1.16;
     letter-spacing: 0.03em;
 
+    @media (max-width: 1199px) {
+            margin-bottom: 30px;
+        }
+
     &__list {
 
             @media (min-width: $mobile) {
